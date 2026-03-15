@@ -1,0 +1,12 @@
+{
+  "name": "errorHandling",
+  "version": "1.0.0",
+  "description": "Error handling example",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
