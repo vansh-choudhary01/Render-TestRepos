@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  setInterval(() => {
+    console.log(process.env.REACT_APP_API_URL);
+    console.log(process.env.REACT_APP_WEBSOCKET_URL);
+  },  5000);
   return (
     <div className="App">
       <header className="App-header">
