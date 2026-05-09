@@ -8,7 +8,7 @@ const SECRET = 'jwt-secret-example';
 app.use(express.json());
 
 app.get('/login', (req, res) => res.send("/login"));
-app.get('/', (req, res) => res.send("good morning backend));
+app.get('/', (req, res) => res.send("good morning backend"));
 
 app.post('/login', (req, res) => {
   const token = jwt.sign({ user: 'test-user' }, SECRET, { expiresIn: '1h' });
