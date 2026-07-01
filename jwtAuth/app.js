@@ -3,7 +3,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const app = express();
 const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
-const SECRET = 'jwt-secret-example';
+const SECRET = process.env.JWT_SECRET;
 
 app.use(express.json());
 
